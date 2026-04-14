@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhafa Denis | Contact</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="sidebar-logo">Dhafa.</a>
+  <span class="sidebar-tagline">Portfolio</span>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="nav-num">01</span> Home</a>
+    <a href="about.html"><span class="nav-num">02</span> About</a>
+    <a href="portfolio.html"><span class="nav-num">03</span> Portfolio</a>
+    <a href="blog.html"><span class="nav-num">04</span> Blog</a>
+    <a href="contact.html" class="active"><span class="nav-num">05</span> Contact</a>
+  </nav>
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-socials">
+    <a href="mailto:Ahirafy1977@gmail.com" class="social-icon">@</a>
+    <a href="https://github.com/dhafaden" target="_blank" class="social-icon">GH</a>
+    <a href="https://instagram.com/dhafadns" target="_blank" class="social-icon">IG</a>
+    <a href="https://wa.me/6282176998906" target="_blank" class="social-icon">WA</a>
+  </div>
+  <p class="sidebar-copy">&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi</p>
+</aside>
+
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+<button class="hamburger" id="hamburger" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
+
+<main class="main">
+
+  <header style="padding:5rem 4rem 2rem;border-bottom:1px solid rgba(255,243,236,0.06);">
+    <span class="section-label">Mau Ngobrol?</span>
+    <span class="deco-line"></span>
+    <h1 style="font-size:clamp(2.5rem,6vw,5rem);font-weight:700;">Contact<br/><em style="color:var(--highlight)">Me!</em></h1>
+  </header>
+
+  <section class="page-content">
+    <div class="contact-layout">
+
+      <div class="reveal">
+        <p class="contact-info-desc">
+          Kalau mau berkenalan lebih dekat dengan saya.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:Ahirafy1977@gmail.com" class="c-link">
+            <div class="c-icon">@</div>
+            <span>Ahirafy1977@gmail.com</span>
+          </a>
+          <a href="https://github.com/dhafaden" target="_blank" class="c-link">
+            <div class="c-icon">GH</div>
+            <span>github.com/dhafaden</span>
+          </a>
+          <a href="https://instagram.com/dhafadns" target="_blank" class="c-link">
+            <div class="c-icon">IG</div>
+            <span>@dhafadns</span>
+          </a>
+          <a href="https://wa.me/6282176998906" target="_blank" class="c-link">
+            <div class="c-icon">WA</div>
+            <span>082176998906</span>
+          </a>
+        </div>
+
+        <!-- Availability Card -->
+        <div style="margin-top:2rem;border:1px solid rgba(232,143,179,0.2);padding:1.25rem;background:rgba(39,28,25,0.4);">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
+            <span style="width:10px;height:10px;border-radius:50%;background:var(--highlight);display:inline-block;animation:pulse 2s infinite;"></span>
+            <span style="font-size:0.85rem;color:var(--headline);font-weight:500;">Tersedia untuk Kolaborasi</span>
+          </div>
+          <p style="font-size:0.82rem;color:rgba(255,243,236,0.55);font-weight:300;">
+            Saat ini saya aktif dan terbuka untuk proyek web, freelance, atau diskusi teknologi.
+          </p>
+        </div>
+
+        <style>
+          @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.2); }
+          }
+        </style>
+      </div>
+
+      <div class="reveal">
+
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="#"
+          method="POST"
+          target="_self"
+          novalidate
+        >
+
+          <fieldset>
+            <legend>Identitas Pengirim</legend>
+
+            <div class="form-group" id="fg-name">
+              <label for="cf-name">Nama Lengkap *</label>
+              <input type="text" id="cf-name" name="name" placeholder="Masukkan nama lengkap..." />
+              <span class="err-msg">Nama minimal 2 karakter.</span>
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;" id="fg-email">
+              <label for="cf-email">Email *</label>
+              <input type="email" id="cf-email" name="email" placeholder="nama@email.com" />
+              <span class="err-msg">Masukkan email yang valid.</span>
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;">
+              <label for="cf-phone">No. WhatsApp (Opsional)</label>
+              <input type="number" id="cf-phone" name="phone" placeholder="08xxxxxxxxxx" />
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;">
+              <label for="cf-date">Tanggal Kontak</label>
+              <input type="date" id="cf-date" name="date" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detail Pesan</legend>
+
+            <div class="form-group" id="fg-subject">
+              <label for="cf-subject">Subjek *</label>
+              <select id="cf-subject" name="subject">
+                <option value="">-- Pilih Subjek --</option>
+                <option value="kolaborasi">Kolaborasi Project</option>
+                <option value="freelance">Pekerjaan Freelance</option>
+                <option value="pertanyaan">Pertanyaan Umum</option>
+                <option value="masukan">Masukan &amp; Saran</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+              <span class="err-msg">Pilih subjek terlebih dahulu.</span>
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;" id="fg-jenis">
+              <label>Jenis Pesan *</label>
+              <div class="radio-group">
+                <label class="radio-item">
+                  <input type="radio" name="jenis" value="pribadi"/> Pribadi
+                </label>
+                <label class="radio-item">
+                  <input type="radio" name="jenis" value="profesional"/> Profesional
+                </label>
+                <label class="radio-item">
+                  <input type="radio" name="jenis" value="akademik"/> Akademik
+                </label>
+              </div>
+              <span class="err-msg">Pilih jenis pesan.</span>
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;" id="fg-message">
+              <label for="cf-message">Pesan * <span id="charCount" style="font-size:0.68rem;color:rgba(255,243,236,0.35);font-weight:300;"></span></label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tulis pesanmu di sini... (minimal 10 karakter)"></textarea>
+              <span class="err-msg">Pesan minimal 10 karakter.</span>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label>Platform yang Lebih Disukai untuk Dihubungi</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" name="platform" value="email"/> Email
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="platform" value="wa"/> WhatsApp
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="platform" value="instagram"/> Instagram
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="platform" value="github"/> GitHub
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-code">Kode Akses (opsional)</label>
+            <input type="password" id="cf-code" name="code" placeholder="Jika ada kode khusus..."/>
+            <span style="font-size:0.72rem;color:rgba(255,243,236,0.35);">Kosongkan jika tidak ada.</span>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%;text-align:center;padding:1rem;">
+            Kirim Pesan &#8594;
+          </button>
+
+          <div class="form-success" id="formSuccess"></div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi &mdash; S1 Ilmu Komputer, Universitas Lampung</span>
+    <span style="color:var(--highlight);">Made with &#9825;</span>
+  </footer>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

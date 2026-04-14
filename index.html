@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhafa Denis | Home</title>
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="sidebar-logo">Dhafa.</a>
+  <span class="sidebar-tagline">Portfolio</span>
+
+  <nav class="sidebar-nav">
+    <a href="index.html" class="active">
+      <span class="nav-num">01</span> Home
+    </a>
+    <a href="about.html">
+      <span class="nav-num">02</span> About
+    </a>
+    <a href="portfolio.html">
+      <span class="nav-num">03</span> Portfolio
+    </a>
+    <a href="blog.html">
+      <span class="nav-num">04</span> Blog
+    </a>
+    <a href="contact.html">
+      <span class="nav-num">05</span> Contact
+    </a>
+  </nav>
+
+  <div class="sidebar-divider"></div>
+
+  <div class="sidebar-socials">
+    <a href="mailto:Ahirafy1977@gmail.com" class="social-icon" title="Email">@</a>
+    <a href="https://github.com/dhafaden" target="_blank" class="social-icon" title="GitHub">GH</a>
+    <a href="https://instagram.com/dhafadns" target="_blank" class="social-icon" title="Instagram">IG</a>
+    <a href="https://wa.me/6282176998906" target="_blank" class="social-icon" title="WhatsApp">WA</a>
+  </div>
+  <p class="sidebar-copy">&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi</p>
+</aside>
+
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+<button class="hamburger" id="hamburger" onclick="toggleSidebar()" aria-label="Toggle Menu">
+  <span></span><span></span><span></span>
+</button>
+
+<main class="main">
+
+  <header class="hero-section">
+
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+
+    <svg style="position:absolute;right:4rem;top:50%;transform:translateY(-50%);opacity:0.06;width:280px;height:280px;pointer-events:none" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="140" cy="140" r="135" stroke="#e78fb3" stroke-width="1"/>
+      <circle cx="140" cy="140" r="100" stroke="#ffc0ad" stroke-width="0.5"/>
+      <circle cx="140" cy="140" r="65" stroke="#9656a1" stroke-width="0.5"/>
+      <line x1="0" y1="140" x2="280" y2="140" stroke="#e78fb3" stroke-width="0.5"/>
+      <line x1="140" y1="0" x2="140" y2="280" stroke="#e78fb3" stroke-width="0.5"/>
+      <line x1="40" y1="40" x2="240" y2="240" stroke="#ffc0ad" stroke-width="0.3"/>
+      <line x1="240" y1="40" x2="40" y2="240" stroke="#ffc0ad" stroke-width="0.3"/>
+    </svg>
+
+    <div class="hero-content">
+      <p class="hero-greeting">WELCOME TO MY HOME!</p>
+      <h1 class="hero-name">Dhafa<br/><em>Denis A.</em></h1>
+      <div class="hero-typed-row">
+        <span class="hero-dash"></span>
+        <span class="typed-text">
+          Mahasiswa Ilmu Komputer | Web Developer | Drummer Enthusiast | Lifelong Learner
+        </span>
+      </div>
+      <p class="hero-desc">
+        Saya adalah seorang mahasiswa yang suka belajar semua hal baru, termasuk membuat website ini.
+        Tapi saya lebih suka bermain drum hehe &#129345;
+      </p>
+      <div class="hero-btns">
+        <a href="portfolio.html" class="btn-primary">Lihat Portfolio</a>
+        <a href="contact.html" class="btn-outline">Hubungi Saya</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Project</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">06-12-2005</span>
+          <span class="stat-label">Birth Date</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">&#9835;</span>
+          <span class="stat-label">Drum</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="scroll-hint-line"></span>
+      <span>scroll</span>
+    </div>
+  </header>
+
+  <section style="padding: 4rem; border-top: 1px solid rgba(255,243,236,0.06);">
+    <div style="max-width: 900px;">
+      <span class="section-label reveal">Highlight</span>
+      <span class="deco-line reveal"></span>
+      <h2 class="section-title reveal" style="margin-bottom:2rem;">Yang Bisa Saya Lakukan</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1.25rem;">
+        <div class="card reveal">
+          <div style="font-size:2rem;margin-bottom:1rem;">&#127760;</div>
+          <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Web Development</h3>
+          <p style="font-size:0.85rem;color:rgba(255,243,236,0.6);">HTML, CSS, JavaScript untuk website yang menarik.</p>
+        </div>
+        <div class="card reveal">
+          <div style="font-size:2rem;margin-bottom:1rem;">&#127912;</div>
+          <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">UI Design</h3>
+          <p style="font-size:0.85rem;color:rgba(255,243,236,0.6);">Saya suka membuat tampilan visual yang Elegant, modern, namun user-friendly.</p>
+        </div>
+        <div class="card reveal">
+          <div style="font-size:2rem;margin-bottom:1rem;">&#9835;</div>
+          <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Drumming</h3>
+          <p style="font-size:0.85rem;color:rgba(255,243,236,0.6);">Hobi bermain drum — Tapi belum punya drum.</p>
+        </div>
+        <div class="card reveal">
+          <div style="font-size:2rem;margin-bottom:1rem;">&#128214;</div>
+          <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Belajar Terus</h3>
+          <p style="font-size:0.85rem;color:rgba(255,243,236,0.6);">Selalu percaya bahwa proses tidak akan mengkhianati HASIL.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi &mdash; S1 Ilmu Komputer, Universitas Lampung</span>
+    <span style="color:var(--highlight);">Made with &#9825;</span>
+  </footer>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

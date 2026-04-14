@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhafa Denis | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="sidebar-logo">Dhafa.</a>
+  <span class="sidebar-tagline">Portfolio</span>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="nav-num">01</span> Home</a>
+    <a href="about.html"><span class="nav-num">02</span> About</a>
+    <a href="portfolio.html" class="active"><span class="nav-num">03</span> Portfolio</a>
+    <a href="blog.html"><span class="nav-num">04</span> Blog</a>
+    <a href="contact.html"><span class="nav-num">05</span> Contact</a>
+  </nav>
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-socials">
+    <a href="mailto:Ahirafy1977@gmail.com" class="social-icon">@</a>
+    <a href="https://github.com/dhafaden" target="_blank" class="social-icon">GH</a>
+    <a href="https://instagram.com/dhafadns" target="_blank" class="social-icon">IG</a>
+    <a href="https://wa.me/6282176998906" target="_blank" class="social-icon">WA</a>
+  </div>
+  <p class="sidebar-copy">&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi</p>
+</aside>
+
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+<button class="hamburger" id="hamburger" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
+
+<main class="main">
+
+  <header style="padding:5rem 4rem 2rem;border-bottom:1px solid rgba(255,243,236,0.06);">
+    <span class="section-label">Karya Saya</span>
+    <span class="deco-line"></span>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <h1 style="font-size:clamp(2.5rem,6vw,5rem);font-weight:700;">My<br/><em style="color:var(--highlight)">Projects.</em></h1>
+      <p style="font-weight:300;max-width:360px;color:rgba(255,243,236,0.65);">
+        Total <strong id="projectCount" style="color:var(--highlight);">0</strong> project tersedia.
+
+      </p>
+    </div>
+  </header>
+
+  <section class="page-content">
+
+    <div class="filter-section reveal">
+      <button class="filter-btn active" data-filter="all" onclick="">Semua</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="desain">Desain</button>
+      <button class="filter-btn" data-filter="akademik">Akademik</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card reveal" data-cat="web">
+        <div class="project-thumb">&#127760;</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+          </div>
+          <h3 class="project-title">Website Portfolio Pribadi</h3>
+          <p class="project-desc">Website portfolio ini sendiri — dibuat dengan HTML, CSS, dan JavaScript murni tanpa framework tambahan.</p>
+          <div class="project-links">
+            <a href="https://github.com/dhafaden" target="_blank" class="btn-primary btn-sm">GitHub</a>
+            <a href="#" class="btn-outline btn-sm">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="web">
+        <div class="project-thumb">&#128203;</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+          </div>
+          <h3 class="project-title">Web Top Up Game</h3>
+          <p class="project-desc">Belajar membuat Web untuk melakukan top up game.</p>
+          <div class="project-links">
+            <a href="https://github.com/dhafaden" target="_blank" class="btn-primary btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="akademik">
+        <div class="project-thumb">&#128218;</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+          </div>
+          <h3 class="project-title">Tugas Pemrograman Web</h3>
+          <p class="project-desc">Kumpulan tugas praktikum pemrograman web yang mengimplementasikan materi dari setiap pertemuan.</p>
+          <div class="project-links">
+            <a href="https://github.com/dhafaden" target="_blank" class="btn-primary btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+  <footer>
+    <span>&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi &mdash; S1 Ilmu Komputer, Universitas Lampung</span>
+    <span style="color:var(--highlight);">Dapon</span>
+  </footer>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/portfolio.js"></script>
+</body>
+</html>

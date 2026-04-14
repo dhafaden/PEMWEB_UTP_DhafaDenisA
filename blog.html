@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhafa Denis | Blog</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="sidebar-logo">Dhafa.</a>
+  <span class="sidebar-tagline">Portfolio</span>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="nav-num">01</span> Home</a>
+    <a href="about.html"><span class="nav-num">02</span> About</a>
+    <a href="portfolio.html"><span class="nav-num">03</span> Portfolio</a>
+    <a href="blog.html" class="active"><span class="nav-num">04</span> Blog</a>
+    <a href="contact.html"><span class="nav-num">05</span> Contact</a>
+  </nav>
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-socials">
+    <a href="mailto:Ahirafy1977@gmail.com" class="social-icon">@</a>
+    <a href="https://github.com/dhafaden" target="_blank" class="social-icon">GH</a>
+    <a href="https://instagram.com/dhafadns" target="_blank" class="social-icon">IG</a>
+    <a href="https://wa.me/6282176998906" target="_blank" class="social-icon">WA</a>
+  </div>
+  <p class="sidebar-copy">&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi</p>
+</aside>
+
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+<button class="hamburger" id="hamburger" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
+
+<main class="main">
+
+  <header style="padding:5rem 4rem 2rem;border-bottom:1px solid rgba(255,243,236,0.06);">
+    <span class="section-label">Tulisan Saya</span>
+    <span class="deco-line"></span>
+    <h1 style="font-size:clamp(2.5rem,6vw,5rem);font-weight:700;">My<br/><em style="color:var(--highlight)">Blog.</em></h1>
+  </header>
+
+  <section class="page-content">
+    <div class="blog-layout">
+
+      <main>
+
+        <article class="blog-card reveal">
+          <div class="blog-thumb">&#127912;</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-cat">CSS</span>
+              <span>25 Januari 2025</span>
+              <span>7 mnt baca</span>
+            </div>
+            <h2 class="blog-title">Cara Design UI di Figma </h2>
+            <p class="blog-excerpt">
+              Figma adalah salah satu tools desain UI/UX yang populer. Dalam artikel ini, saya membahas fitur-fitur utama Figma dan tips desain yang efektif.
+            </p>
+            <a href="#" class="btn-outline btn-sm" onclick="showNotification('Artikel sedang dipersiapkan! 📝'); return false;">Baca Selengkapnya &rarr;</a>
+          </div>
+        </article>
+
+
+        <article class="blog-card reveal">
+          <div class="blog-thumb">&#9889;</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-cat">JavaScript</span>
+              <span>5 Februari 2025</span>
+              <span>6 mnt baca</span>
+            </div>
+            <h2 class="blog-title">PKKMB UNILA</h2>
+            <p class="blog-excerpt">
+              PKKMB (Pengenalan Kehidupan Kampus Mahasiswa Baru) adalah acara tahunan yang wajib diikuti oleh semua mahasiswa baru di Universitas Lampung. Dalam artikel ini, saya berbagi pengalaman mengikuti PKKMB.
+            </p>
+            <a href="#" class="btn-outline btn-sm" onclick="showNotification('Artikel sedang dipersiapkan! 📝'); return false;">Baca Selengkapnya &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-thumb">&#129345;</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-cat">Personal</span>
+              <span>14 Februari 2025</span>
+              <span>4 mnt baca</span>
+            </div>
+            <h2 class="blog-title">Antara Coding dan Drum: Kesamaan yang Tak Terduga</h2>
+            <p class="blog-excerpt">
+              Siapa sangka bahwa bermain drum dan belajar coding ternyata memiliki banyak kesamaan? Keduanya membutuhkan konsistensi, kesabaran, dan kemampuan untuk memecah masalah kompleks menjadi bagian-bagian yang lebih kecil. Inilah refleksi saya tentang dua passion yang saya jalani.
+            </p>
+            <a href="#" class="btn-outline btn-sm" onclick="showNotification('Artikel sedang dipersiapkan! 📝'); return false;">Baca Selengkapnya &rarr;</a>
+          </div>
+        </article>
+
+      </main>
+
+      <aside class="blog-sidebar">
+
+        <div class="widget reveal">
+          <h3 class="widget-title">Cari Artikel</h3>
+          <div class="form-group">
+            <input type="search" placeholder="Ketik kata kunci..." id="searchInput" style="background:rgba(39,28,25,0.7);border:1px solid rgba(255,192,173,0.2);color:var(--headline);padding:0.6rem 0.9rem;font-family:DM Sans,sans-serif;font-size:0.9rem;outline:none;width:100%;"/>
+          </div>
+          <p id="searchResult" style="font-size:0.8rem;color:rgba(255,243,236,0.4);margin-top:0.5rem;"></p>
+        </div>
+
+        <div class="widget reveal">
+          <h3 class="widget-title">Kategori</h3>
+          <ul class="widget-list">
+            <li onclick="showNotification('Filter: Web Dev')">&#127760; Web Development (2)</li>
+            <li onclick="showNotification('Filter: CSS')">&#127912; CSS &amp; Design (1)</li>
+            <li onclick="showNotification('Filter: JavaScript')">&#9889; JavaScript (1)</li>
+            <li onclick="showNotification('Filter: Personal')">&#129345; Personal (1)</li>
+          </ul>
+        </div>
+
+        <div class="widget reveal">
+          <h3 class="widget-title">Tags</h3>
+          <div class="widget-tags">
+            <span class="widget-tag" onclick="showNotification('#HTML')">HTML</span>
+            <span class="widget-tag" onclick="showNotification('#CSS')">CSS</span>
+            <span class="widget-tag" onclick="showNotification('#JavaScript')">JavaScript</span>
+            <span class="widget-tag" onclick="showNotification('#Flexbox')">Flexbox</span>
+            <span class="widget-tag" onclick="showNotification('#Grid')">Grid</span>
+            <span class="widget-tag" onclick="showNotification('#DOM')">DOM</span>
+            <span class="widget-tag" onclick="showNotification('#Personal')">Personal</span>
+            <span class="widget-tag" onclick="showNotification('#Drum')">Drum</span>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi &mdash; S1 Ilmu Komputer, Universitas Lampung</span>
+    <span style="color:var(--highlight);">Made with &#9825;</span>
+  </footer>
+</main>
+
+<script src="js/main.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+  var searchInput = document.getElementById('searchInput');
+  var searchResult = document.getElementById('searchResult');
+  var articles = document.querySelectorAll('article.blog-card');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function () {
+      var q = this.value.toLowerCase().trim();
+      var count = 0;
+
+      articles.forEach(function (art) {
+        var title = art.querySelector('.blog-title').textContent.toLowerCase();
+        var excerpt = art.querySelector('.blog-excerpt').textContent.toLowerCase();
+
+        if (q === '' || title.includes(q) || excerpt.includes(q)) {
+          art.style.display = 'block';
+          count++;
+        } else {
+          art.style.display = 'none';
+        }
+      });
+
+      if (q !== '') {
+        searchResult.textContent = 'Ditemukan ' + count + ' artikel'; 
+        searchResult.style.color = count > 0 ? 'var(--highlight)' : 'rgba(255,100,100,0.7)';
+      } else {
+        searchResult.textContent = '';
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

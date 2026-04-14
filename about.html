@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhafa Denis | About</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="sidebar-logo">Dhafa.</a>
+  <span class="sidebar-tagline">Portfolio</span>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="nav-num">01</span> Home</a>
+    <a href="about.html" class="active"><span class="nav-num">02</span> About</a>
+    <a href="portfolio.html"><span class="nav-num">03</span> Portfolio</a>
+    <a href="blog.html"><span class="nav-num">04</span> Blog</a>
+    <a href="contact.html"><span class="nav-num">05</span> Contact</a>
+  </nav>
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-socials">
+    <a href="mailto:Ahirafy1977@gmail.com" class="social-icon">@</a>
+    <a href="https://github.com/dhafaden" target="_blank" class="social-icon">GH</a>
+    <a href="https://instagram.com/dhafadns" target="_blank" class="social-icon">IG</a>
+    <a href="https://wa.me/6282176998906" target="_blank" class="social-icon">WA</a>
+  </div>
+  <p class="sidebar-copy">&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi</p>
+</aside>
+
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+<button class="hamburger" id="hamburger" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
+
+<main class="main">
+  <header style="padding:5rem 4rem 2rem;border-bottom:1px solid rgba(255,243,236,0.06);">
+    <span class="section-label">Siapa Saya?</span>
+    <span class="deco-line"></span>
+    <h1 style="font-size:clamp(2.5rem,6vw,5rem);font-weight:700;">About<br/><em style="color:var(--highlight)">Me.</em></h1>
+  </header>
+
+  <section class="page-content">
+    <div class="about-grid">
+
+      <div class="about-photo-col">
+        <div class="about-photo">
+          <img src="dapon.png" alt="Foto Dhafa Denis" />
+        </div>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span class="tag">20 Tahun</span>
+          <span class="tag">Suka Musik</span>
+          <span class="tag">Mahasiswa</span>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="font-size:clamp(2rem,4vw,3.5rem);font-weight:600;margin-bottom:0.75rem;" class="reveal">
+          Dhafa Denis<br/><em style="color:var(--highlight);font-size:0.75em;">Al Isyrafi</em>
+        </h2>
+
+        <p class="about-bio reveal">
+          Mahasiswa S1 Ilmu Komputer di Universitas Lampung yang penuh rasa ingin tahu. Saya senang menjelajahi berbagai hal baru.
+        </p>
+        <p class="about-bio reveal">
+          Menurut saya, belajar bukan hanya tentang akademis, tapi juga tentang mengekspresikan diri. Membuat website ini adalah salah satu cara saya berkreasi dan berkembang.
+        </p>
+
+        <div class="facts-grid reveal">
+          <div class="fact"><span class="fact-label">Universitas</span><span class="fact-val">Universitas Lampung</span></div>
+          <div class="fact"><span class="fact-label">Program Studi</span><span class="fact-val">S1 Ilmu Komputer</span></div>
+          <div class="fact"><span class="fact-label">Hobi</span><span class="fact-val">Bermain Drum & Basket</span></div>
+          <div class="fact"><span class="fact-label">Alamat</span><span class="fact-val">Jl. Pancasila Sakti GG Fajar Sari No.38B Kemiling, Bandar Lampung</span></div>
+          <div class="fact"><span class="fact-label">Email</span><span class="fact-val" style="font-size:0.85rem;">Ahirafy1977@gmail.com</span></div>
+          <div class="fact"><span class="fact-label">GitHub</span><span class="fact-val">dhafaden</span></div>
+        </div>
+
+        <div class="skills-section reveal">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:1.5rem;color:var(--headline);">Skills</h3>
+
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">HTML &amp; CSS</span><span class="skill-percent">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percent">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Tailwind CSS</span><span class="skill-percent">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Bootstrap</span><span class="skill-percent">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">PHP</span><span class="skill-percent">55%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="55"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-percent">60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Git &amp; GitHub</span><span class="skill-percent">60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Python</span><span class="skill-percent">50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem;" class="reveal">
+          <a href="portfolio.html" class="btn-primary">Lihat Portfolio &rarr;</a>
+          &nbsp;&nbsp;
+          <a href="contact.html" class="btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; <span class="current-year">2025</span> Dhafa Denis Al Isyrafi &mdash; S1 Ilmu Komputer, Universitas Lampung</span>
+    <span style="color:var(--highlight);">Dapon</span>
+  </footer>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
