@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-      /* Validasi radio - jenis pesan */
       const radioChecked = document.querySelector('input[name="jenis"]:checked');
       const radioFg = document.getElementById('fg-jenis');
       if (!radioChecked) {
