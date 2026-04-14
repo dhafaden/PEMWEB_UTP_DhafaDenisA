@@ -30,6 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const counterEl = document.getElementById('projectCount');
   if (counterEl) {
-    counterEl.textContent = projectCards.length;  // mengubah teks
+    counterEl.textContent = projectCards.length;
   }
 });
