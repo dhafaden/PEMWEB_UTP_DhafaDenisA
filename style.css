@@ -226,7 +226,6 @@ footer {
   top: 30%; right: 35%; animation-delay: 1.5s;
 }
 
-/* CSS Animation */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
